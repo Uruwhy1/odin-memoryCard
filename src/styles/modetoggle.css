@@ -1,0 +1,40 @@
+.mode-toggle {
+  position: absolute;
+  right: 20px;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 50px;
+  background-color: var(--toggle-switch-bg);
+  padding: 10px;
+  color: #ffffff;
+  
+  width: 100px;
+
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+.title .mode-toggle p {
+  font-size: 1.4em;
+  font-weight: 1000;
+}
+.mode-toggle svg {
+  stroke: #fff;
+}
+
+.mode-toggle .light-up {
+  stroke: yellow;
+  fill: yellow;
+}
+.mode-toggle.dark {
+  transform: rotate3D(1, 1, 1, -5deg);
+  box-shadow: -8px 5px 0 var(--toggle-switch-shadow);
+}
+.mode-toggle.light {
+  transform: rotate3D(1, 1, 1, 5deg);
+  box-shadow: 8px 5px 0 var(--toggle-switch-shadow);
+}
