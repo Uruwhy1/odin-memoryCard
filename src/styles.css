@@ -1,3 +1,55 @@
-h1 {
-  font-size: 20em;
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: gray;
+  color: var(--text-color);
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instructions-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* instructions box */
+.instructions-card {
+  background-color: black;
+  padding: 1rem 2rem;
+
+  font-size: 1.1rem;
+
+  width: 550px;
+  height: 450px;
+
+  display: grid;
+  align-items: center;
+}
+.instructions-card ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.instructions-card li {
+  margin-left: 1rem;
+}
+
+.good-luck-message {
+  justify-self: center;
+  align-self: end;
+}
+
+.start-game {
+  padding: 0.7em 1.2em;
+  cursor: pointer;
 }
