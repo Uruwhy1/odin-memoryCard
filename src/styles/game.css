@@ -8,3 +8,51 @@
   flex-wrap: wrap;
 }
 
+.message-container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(4px);
+  background-color: var(--message-bg);
+  
+  z-index: 1;
+}
+.message {
+  padding: 2.5rem 4rem;
+
+  position: absolute;
+
+  border-radius: 15px;
+
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.message.losing {
+  background-color: var(--losing-bg);
+}
+.message.winning {
+  background-color: var(--winning-bg);
+}
+
+.message h1 {
+  color: #fff;
+}
+.message button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+
+  color: #fff;
+  background-color: var(--toggle-switch-shadow);
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}

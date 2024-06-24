@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import MoonIcon from "../assets/images/moon.svg?react";
 import SunIcon from "../assets/images/sun.svg?react";
 
-import "../styles/modetoggle.css";
 
 export default function ModeToggle() {
 

@@ -1,0 +1,28 @@
+.title {
+  display: grid;
+  grid-template-areas: "score text buttons";
+  grid-template-columns: 25% 50% 25%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--title-bg);
+  color: var(--white-text);
+
+  padding: 1rem;
+}
+
+.title h1 {
+  font-size: 2.2rem;
+  font-weight: 1000;
+}
+
+.title p {
+  font-weight: 600;
+}
+
+.scoreboard {
+  font-size: 1.4em;
+}
+
+.title .text {
+  text-align: center;
+}

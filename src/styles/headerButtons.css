@@ -1,8 +1,14 @@
-.mode-toggle {
-  position: absolute;
-  right: 20px;
-  z-index: 1000;
+.buttons {
+  justify-self: end;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+/* DARK-LIGHT MODE TOGGLE */
+
+.mode-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +18,9 @@
   background-color: var(--toggle-switch-bg);
   padding: 10px;
   color: #ffffff;
-  
+
   width: 100px;
+  height: 50px;
 
   transition: all 0.1s ease-in;
   cursor: pointer;

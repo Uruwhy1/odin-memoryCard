@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./styles/reset.css";
 import "./styles.css";
 import "./styles/variables.css";
@@ -9,12 +9,15 @@ import Game from "./components/Game.jsx";
 export default function App() {
   const [currentScore, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-
   const [movesArray, setMovesArray] = useState([]);
 
   return (
     <div className="container">
-      <TitleHeader currentScore={currentScore} highScore={highScore} />
+      <TitleHeader
+        currentScore={currentScore}
+        highScore={highScore}
+
+      />
       <Game
         currentScore={currentScore}
         setScore={setScore}
