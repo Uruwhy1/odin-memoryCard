@@ -21,6 +21,7 @@
 .title .mode-toggle p {
   font-size: 1.4em;
   font-weight: 1000;
+  user-select: none;
 }
 .mode-toggle svg {
   stroke: #fff;
@@ -32,9 +33,11 @@
 }
 .mode-toggle.dark {
   transform: rotate3D(1, 1, 1, -5deg);
+
   box-shadow: -8px 5px 0 var(--toggle-switch-shadow);
 }
 .mode-toggle.light {
   transform: rotate3D(1, 1, 1, 5deg);
+
   box-shadow: 8px 5px 0 var(--toggle-switch-shadow);
 }

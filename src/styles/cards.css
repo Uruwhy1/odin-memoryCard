@@ -1,0 +1,17 @@
+.card {
+  width: 16vw;
+  height: 250px;
+  background-color: #000;
+
+  object-fit: cover;
+
+  border: 3px solid;
+  cursor: pointer;
+
+  transition: transform 0.1s;
+  will-change: auto;
+}
+.card:hover {
+  transform: scale(1.05);
+  backface-visibility: hidden;
+}
