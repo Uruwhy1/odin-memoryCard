@@ -4,8 +4,8 @@
   --footer-bg: #000000;
   --message-bg: #8be5fc5d;
 
-  --losing-bg: red;
-  --winning-bg: green;
+  --losing-color: red;
+  --winning-color: green;
 
   --toggle-switch-bg: rgb(223, 67, 67);
   --toggle-switch-shadow: rgb(104, 37, 37);

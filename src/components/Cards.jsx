@@ -15,7 +15,7 @@ export default function Cards({ handleClick }) {
   }, []);
 
   const getImages = async () => {
-    const apiKey = "YOUR_API_KEY";
+    const apiKey = "7qxQsXiGK455T4GGkq0fVZtnkwoGacVLg1pqkNwpENO5asYMEwfDA83N";
     const response = await fetch(
       "https://api.pexels.com/v1/search?query=dogs&orientation=landscape&per_page=10&size=small",
       {
@@ -26,7 +26,7 @@ export default function Cards({ handleClick }) {
     );
     const data = await response.json();
     const imageObjects = data.photos.map((photo, index) => ({
-      id: index,
+      id: index + 1 ,
       url: photo.src.original,
     }));
     setImages(imageObjects);

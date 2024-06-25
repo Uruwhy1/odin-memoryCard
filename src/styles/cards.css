@@ -8,10 +8,13 @@
   border: 3px solid;
   cursor: pointer;
 
-  transition: transform 0.1s;
   will-change: auto;
+  transition: transform 0s;
+
 }
 .card:hover {
   transform: scale(1.05);
   backface-visibility: hidden;
+
+  transition: transform 0.1s;
 }

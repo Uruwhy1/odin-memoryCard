@@ -2,6 +2,8 @@
 import { useState } from "react";
 import "../styles/game.css";
 import Cards from "./Cards";
+import wonImg from "../assets/images/won.gif";
+import lostImg from "../assets/images/lost.gif";
 
 export default function Game({
   movesArray,
@@ -37,18 +39,16 @@ export default function Game({
     <div className="game">
       {gameState == "lost" && (
         <div className="message-container">
-          <div className="message losing">
-            <h1>You lost!</h1>
-            <StartButton handleStart={handleStart} />
-          </div>
+          <h1 className="losing">You lost!</h1>
+          <img src={lostImg} alt="a" />
+          <StartButton handleStart={handleStart} />
         </div>
       )}
       {gameState == "won" && (
         <div className="message-container">
-          <div className="message winning">
-            <h1>You won!</h1>
-            <StartButton handleStart={handleStart} />
-          </div>
+          <h1 className="winning">You won!</h1>
+          <img src={wonImg} alt="a" />
+          <StartButton handleStart={handleStart} />
         </div>
       )}
       <Cards handleClick={handleClick} />
@@ -56,6 +56,6 @@ export default function Game({
   );
 }
 
-function StartButton({handleStart}) {
+function StartButton({ handleStart }) {
   return <button onClick={handleStart}>Start Game</button>;
 }
